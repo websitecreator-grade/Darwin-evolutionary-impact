@@ -1,87 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Darwin's Evolutionary Impact</title>
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darwin’s Evolutionary Impact: A Digital Exhibit</title>
+    <!-- Linking external stylesheet and javascript file -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
 
-<header>
-<h1>Darwin's Evolutionary Impact</h1>
-<p>A Digital Museum Exhibit Exploring Evolution</p>
+    <!-- 2. Header / Museum Entrance -->
+    <header class="museum-header">
+        <div class="header-logo">
+            <h1>Darwin’s Evolutionary Impact: A Digital Exhibit</h1>
+            <p class="subtitle">Exploring Darwin’s discoveries and how evolution continues to shape life today</p>
+        </div>
+        <nav class="museum-nav">
+            <ul>
+                <li><a href="#journey">Darwin’s Journey</a></li>
+                <li><a href="#evidence">Evidence Gallery</a></li>
+                <li><a href="#claims">Darwin’s Five Claims</a></li>
+                <li><a href="#today">Evolution Today</a></li>
+                <li><a href="#classification">Classification Lab</a></li>
+                <li><a href="#case">Case Study Spotlight</a></li>
+                <li><a href="#credits">Credits</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-<a href="#journey">Darwin's Journey</a>
-<a href="#evidence">Evidence Gallery</a>
-<a href="#claims">Five Claims</a>
-<a href="#today">Evolution Today</a>
-<a href="#classification">Classification Lab</a>
-<a href="#case">Case Study</a>
-</nav>
+    <main>
+        <!-- 3. Hero Section (Museum Entrance) -->
+        <section class="hero-entrance animate-fade-in">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>Welcome to the Digital Exhibit</h2>
+                <p>Step inside to trace the historic voyage of the HMS Beagle, inspect ancient fossils in the gallery, and discover how natural selection operates in our modern world.</p>
+                <!-- JS target for smooth scroll down -->
+                <button id="enter-exhibit-btn" class="btn-primary interactive-btn">Enter Exhibit</button>
+            </div>
+        </section>
 
-</header>
+        <!-- 4. Darwin’s Journey Section -->
+        <section id="journey" class="exhibit-section timeline-section">
+            <h2 class="section-title">Darwin’s Journey</h2>
+            <div class="timeline-container">
+                <!-- Timeline Card 1 -->
+                <div class="timeline-card animate-on-scroll">
+                    <div class="card-image-placeholder">[Image Placeholder: Darwin's Early Life]</div>
+                    <h3>Early Life</h3>
+                    <p>Darwin developed a childhood interest in nature and collecting specimens long before his academic studies at Edinburgh and Cambridge.</p>
+                </div>
+                <!-- Timeline Card 2 -->
+                <div class="timeline-card animate-on-scroll">
+                    <div class="card-image-placeholder">[Image Placeholder: HMS Beagle Voyage]</div>
+                    <h3>HMS Beagle Voyage</h3>
+                    <p>From 1831 to 1836, Darwin made vital scientific observations and collected extensive geological and biological specimens around the globe.</p>
+                </div>
+                <!-- Timeline Card 3 -->
+                <div class="timeline-card animate-on-scroll">
+                    <div class="card-image-placeholder">[Image Placeholder: Galápagos Islands]</div>
+                    <h3>Galápagos Islands</h3>
+                    <p>Observations of variation among island finches heavily influenced his development of the theory of natural selection.</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- 5. Evidence Gallery Section -->
+        <section id="evidence" class="exhibit-section gallery-section">
+            <h2 class="section-title">Evidence Gallery</h2>
+            <p class="gallery-subtitle">Explore the interactive museum exhibit rooms below.</p>
+            <div class="gallery-grid">
+                <!-- Exhibit Room 1 -->
+                <div class="gallery-room-card animate-on-scroll">
+                    <div class="room-image-placeholder">[Image: Fossil Hall]</div>
+                    <h3>Fossil Hall</h3>
+                    <p>Fossils show organisms change over time. Transitional fossils provide evidence of evolutionary relationships.</p>
+                    <ul class="specimen-list">
+                        <li>Archaeopteryx</li>
+                        <li>Whale evolution lineages</li>
+                    </ul>
+                </div>
+                <!-- Exhibit Room 2 -->
+                <div class="gallery-room-card animate-on-scroll">
+                    <div class="room-image-placeholder">[Image: DNA Laboratory]</div>
+                    <h3>DNA Laboratory</h3>
+                    <p>DNA similarities reveal common ancestry. Genetic sequencing allows modern scientists to compare organisms directly.</p>
+                </div>
+                <!-- Exhibit Room 3 -->
+                <div class="gallery-room-card animate-on-scroll">
+                    <div class="room-image-placeholder">[Image: Anatomy Archive]</div>
+                    <h3>Anatomy Archive</h3>
+                    <p>Homologous structures demonstrate shared ancestral blueprints adapted for different functions.</p>
+                    <ul class="specimen-list">
+                        <li>Human arm anatomy</li>
+                        <li>Whale flipper structure</li>
+                        <li>Bat wing anatomy</li>
+                    </ul>
+                </div>
+                <!-- Exhibit Room 4 -->
+                <div class="gallery-room-card animate-on-scroll">
+                    <div class="room-image-placeholder">[Image: Biogeography Gallery]</div>
+                    <h3>Biogeography Gallery</h3>
+                    <p>The global geographic distribution of species provides compelling evidence for evolution and island adaptation.</p>
+                    <ul class="specimen-list">
+                        <li>Galápagos endemic species</li>
+                        <li>Island evolution patterns</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-<main>
+        <!-- 6. Darwin’s Five Claims Section -->
+        <section id="claims" class="exhibit-section claims-section">
+            <h2 class="section-title">Darwin’s Five Claims</h2>
+            <div class="claims-grid">
+                <!-- Claim 1 -->
+                <div class="interactive-claim-card" data-claim="1">
+                    <h3>Claim 1: Nonconstancy of Species</h3>
+                    <div class="claim-details">
+                        <p class="question"><strong>Question:</strong> How do species change?</p>
+                        <p><strong>Evidence:</strong> Antibiotic resistance and ongoing bacterial evolution.</p>
+                    </div>
+                    <button class="btn-secondary claim-toggle">View Details</button>
+                </div>
+                <!-- Claim 2 -->
+                <div class="interactive-claim-card" data-claim="2">
+                    <h3>Claim 2: Descent From Common Ancestor</h3>
+                    <div class="claim-details">
+                        <p><strong>Evidence:</strong> Fossil records, structural DNA matches, and homologous structures.</p>
+                    </div>
+                    <button class="btn-secondary claim-toggle">View Details</button>
+                </div>
+                <!-- Claim 3 -->
+                <div class="interactive-claim-card" data-claim="3">
+                    <h3>Claim 3: Gradual Evolution</h3>
+                    <div class="claim-details">
+                        <p><strong>Evidence:</strong> Adaptive variations in Darwin’s finches, historical peppered moths, and dog breeding.</p>
+                    </div>
+                    <button class="btn-secondary claim-toggle">View Details</button>
+                </div>
+                <!-- Claim 4 -->
+                <div class="interactive-claim-card" data-claim="4">
+                    <h3>Claim 4: Multiplication of Species</h3>
+                    <div class="claim-details">
+                        <p><strong>Evidence:</strong> Speciation events driven by island isolation and adaptive radiations in Cichlid fish.</p>
+                    </div>
+                    <button class="btn-secondary claim-toggle">View Details</button>
+                </div>
+                <!-- Claim 5 -->
+                <div class="interactive-claim-card" data-claim="5">
+                    <h3>Claim 5: Natural Selection</h3>
+                    <div class="claim-details">
+                        <p><strong>Evidence:</strong> Modern climate change adaptations, urban wildlife behaviors, and shifting species ranges.</p>
+                    </div>
+                    <button class="btn-secondary claim-toggle">View Details</button>
+                </div>
+            </div>
+        </section>
 
-<section class="hero">
-<h2>Welcome to the Evolution Museum</h2>
-<p>Explore Darwin's discoveries and how evolution shapes life today.</p>
-<button>Enter Exhibit</button>
-</section>
-
-
-<section id="journey">
-<h2>Darwin's Journey</h2>
-<p>HMS Beagle, Galápagos Islands, and Darwin's discoveries.</p>
-</section>
-
-
-<section id="evidence">
-<h2>Evidence Gallery</h2>
-<p>Fossils, DNA, homologous structures, and biogeography.</p>
-</section>
-
-
-<section id="claims">
-<h2>Darwin's Five Claims</h2>
-<p>Explore evidence supporting evolutionary theory.</p>
-</section>
-
-
-<section id="today">
-<h2>Evolution Today</h2>
-<p>Evolutionary medicine and modern applications.</p>
-</section>
-
-
-<section id="classification">
-<h2>Classification Lab</h2>
-<p>How scientists classify organisms using genetics.</p>
-</section>
-
-
-<section id="case">
-<h2>Case Study Spotlight</h2>
-<p>Real-world examples of evolution in action.</p>
-</section>
-
-</main>
-
-
-<footer>
-<p>Darwin's Evolutionary Impact Digital Exhibit</p>
-</footer>
-
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+        <!-- 7. Evolution Today Section -->
+        <section id="today" class="exhibit-section modern-science-section">
+            <h2 class="section-title">Evolutionary Medicine: Diseases That Changed Our DNA</h2>
+            <div class="disease-cards-container">
+                <!-- Card 1 -->
+                <div class="disease-card animate-on-scroll">
+                    <h3>Black Death</h3>
+                    <ul>
+                        <li><strong>Agent:</strong> Yersinia pestis</li>
+                        <li><strong>Impact:</strong> Massive pandemic effects and ancient DNA studies point to ERAP2 gene selection.</li>
+                    </ul>
+                    <p class="connection-tag"><strong>Connection:</strong> Intense disease pressure actively altered human populations.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="disease-card animate-on-scroll">
+                    <h3>Sickle Cell Disease</h3>
+                    <ul>
+                        <li><strong>Agent:</strong> HBB mutation</li>
+                        <li><strong>Impact:</strong> Sickle cell trait offers key malaria protection despite genetic health risks.</li>
+                    </ul>
